@@ -9,7 +9,6 @@
 }
 
 /* Begynd her... */
-
 article {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,18 +16,22 @@ article {
 
   h1 {
     color: var(--color-heading);
+    font-size: 2rem;
   }
   button {
-    color: var(--color-bg-button);
+    color: white;
+    background-color: var(--color-bg-button);
+    padding: 10px;
+    border-radius: 20px;
   }
   & > div:has(img) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 
     & > :first-child {
       grid-column: 2;
     }
-
     & > :nth-child(2) {
       grid-column: 1;
       grid-row: 2;
