@@ -1,4 +1,31 @@
 article {
-    max-width: 65ch;
-    margin-inline: auto;
+  max-width: 65ch;
+  margin-inline: auto;
+  display: contents;
+}
+
+main {
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr
+    [content-start] minmax(0, 60ch) [content-end]
+    1fr [full-end];
+}
+
+article > * {
+  grid-column: content-start / content-end;
+  max-width: 60ch;
+}
+
+blockquote {
+  grid-column: full-start / full-end;
+  padding: 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+img {
+  grid-column: full-start / full-end;
+  width: 100%;
+  display: block;
 }
