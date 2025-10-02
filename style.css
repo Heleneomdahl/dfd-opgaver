@@ -22,7 +22,6 @@ section {
       margin-top: 0.75rlh;
     }
   }
-
   figure {
     grid-area: 1 / 1 / 3/ -2;
     display: grid;
