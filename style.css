@@ -31,6 +31,10 @@ article {
     font-size: 0.9rem;
     color: var(--body);
   }
+  li {
+    display: flex;
+    flex: 1;
+  }
 }
 
 header {
@@ -171,6 +175,7 @@ header {
   .content {
     margin-inline: auto;
     text-align: center;
+    translate: 0 -3rem; /*rykker overskriften indover billedet*/
   }
 
   .actions {
@@ -179,6 +184,9 @@ header {
 
   .actions button {
     inline-size: 100%;
+  }
+  img {
+    mask: linear-gradient(red 60%, transparent); /*gør billedet gennemsigtigt i bunden*/
   }
 }
 
