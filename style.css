@@ -1,5 +1,5 @@
 /* Dine styles her */
-html {
+:root {
   --flow-space: 0.5rlh;
 }
 article {
